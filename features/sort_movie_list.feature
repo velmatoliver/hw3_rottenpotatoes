@@ -25,11 +25,13 @@ Scenario: sort movies alphabetically
   When I check all the ratings
   When I press "ratings_submit"
   When I follow "Movie Title"
+  Then I should see all of the movies
   Then I should see "Amelie" before "The Terminator"
 
 Scenario: sort movies in increasing order of release date
   When I check all the ratings
   When I press "ratings_submit"
   When I follow "Release Date"
+  Then I should see all of the movies
   Then I should see "1984-10-26" before "2001-04-25"
 
