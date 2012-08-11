@@ -14,7 +14,7 @@ end
 Then /I should see "(.*)" before "(.*)"/ do |e1, e2|
   #  ensure that that e1 occurs before e2.
   #  page.content  is the entire content of the page as a string.
-  assert page.body.index(e1) < page.body.inex(e2), "Wrong order"
+  assert page.body.index(e1) < page.body.index(e2), "Wrong order"
 end
 
 Then /^I should see movies rated: (.*)/ do |rating_list|
